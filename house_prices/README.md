@@ -48,5 +48,5 @@ match.)
 Here is the vectorized implementation of the Gradient Descent Algorithm I used.
 I set my learning rate to 0.1 and chose to iterate the Algorithm 1500 times.
 
-![Gradient Descent Algorithm](http://latex.codecogs.com/svg.latex?\theta=\theta-\frac{\alpha}{m}(X^T*(X\theta - y))
+![Gradient Descent Algorithm](http://latex.codecogs.com/svg.latex?\theta=\theta-\frac{\alpha}{m}(X^T*(X\theta-y))
 
