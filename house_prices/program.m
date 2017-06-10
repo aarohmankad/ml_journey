@@ -30,9 +30,6 @@ fprintf('Normalizing features...\n');
 
 [X mu sigma] = featureNormalize(X);
 
-fprintf('Program paused. Press enter to continue...\n');
-pause;
-
 %% ================ Part 2: Cost and Gradient Descent ================
 
 % Add column of ones to X

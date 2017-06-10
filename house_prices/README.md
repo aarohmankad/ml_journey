@@ -50,3 +50,8 @@ I set my learning rate to 0.1 and chose to iterate the Algorithm 1500 times.
 
 ![Gradient Descent Algorithm]( http://latex.codecogs.com/svg.latex?\theta=\theta-\frac{\alpha}{m}(X^T*(X\theta-y) )
 
+For every iteration, I computed the cost of my theta values through Mean Square
+Error. The vectorized implementation I used looks like this:
+
+![Cost Function]( http://latex.codecogs.com/svg.latex?J=\frac{1}{2m}(X\theta-y)^T(X\theta-y) )
+
