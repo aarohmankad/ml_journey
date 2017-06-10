@@ -35,7 +35,7 @@ vectorized, and translates to one line of code in Octave/Matlab. Normalizing my
 data also allows me to converge my Cost Function quicker. Here is what
 it looks like:
 
-![Formula for Feature Standardization](https://wikimedia.org/api/rest_v1/media/math/render/svg/b0aa2e7d203db1526c577192f2d9102b718eafd5)
+![Formula for Feature Standardization]( http://latex.codecogs.com/svg.latex?X=\frac{X-\bar{X}}{\sigma(X)} )
 
 This formula gave my features a mean of 0, and a unit variance.
 
@@ -47,6 +47,8 @@ match.)
 
 Here is the vectorized implementation of the Gradient Descent Algorithm I used.
 I set my learning rate to 0.1 and chose to iterate the Algorithm 1500 times.
+(The learning rate and iterations were tweaked several times until I settled on
+values that converged relatively quickly.)
 
 ![Gradient Descent Algorithm]( http://latex.codecogs.com/svg.latex?\theta=\theta-\frac{\alpha}{m}(X^T*(X\theta-y) )
 
@@ -54,4 +56,24 @@ For every iteration, I computed the cost of my theta values through Mean Square
 Error. The vectorized implementation I used looks like this:
 
 ![Cost Function]( http://latex.codecogs.com/svg.latex?J=\frac{1}{2m}(X\theta-y)^T(X\theta-y) )
+
+## Running Algorithm on Test data
+
+If you recall, I had segmented my data into 90/10 percent chunks during my data
+cleaning step. Up to this point, I had computed my weights through the 90%
+chunk. Now I will use the 10% chunk to test my algorithm.
+
+Here were the steps that went into testing my program:
+
+*   Normalize the testing data (My average and std. deviation were retured from
+    the Feature Normalization step.)
+*   Compute hypothesis values by matrix-matrix multiplication
+    ![Computing hypothesis values]( http://latex.codecogs.com/svg.latex?h_{\theta}(X)=X\theta )
+*   Use Octave function `corr(hypothesis, test_data_y` to generate correlation
+    between my hypothesis and expected values for houses.
+
+My algorithm worked! I received an accuracy of 92.6%. Here is the output from
+the program:
+
+![Program Output](./github_assets/program_output.png)
 
