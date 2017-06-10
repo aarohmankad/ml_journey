@@ -35,7 +35,7 @@ vectorized, and translates to one line of code in Octave/Matlab. Normalizing my
 data also allows me to converge my Cost Function quicker. Here is what
 it looks like:
 
-![Formula for Feature Standardization]( http://latex.codecogs.com/svg.latex?X=\frac{X-\bar{X}}{\sigma(X)} )
+![Formula for Feature Standardization]( http://latex.codecogs.com/svg.latex?X'=\frac{X-\overline{X}}{\sigma(X)} )
 
 This formula gave my features a mean of 0, and a unit variance.
 
@@ -69,7 +69,7 @@ Here were the steps that went into testing my program:
     the Feature Normalization step.)
 *   Compute hypothesis values by matrix-matrix multiplication
     ![Computing hypothesis values]( http://latex.codecogs.com/svg.latex?h_{\theta}(X)=X\theta )
-*   Use Octave function `corr(hypothesis, test_data_y` to generate correlation
+*   Use Octave function `corr(hypothesis, test_data_y)` to generate correlation
     between my hypothesis and expected values for houses.
 
 My algorithm worked! I received an accuracy of 92.6%. Here is the output from
