@@ -27,6 +27,6 @@ with Machine Learning. Here is a table of contents of what I've learned:
     on Coursera
     +   Finished Weeks 1 - 3
 
-*   Worked on a simple housing dataset from Kaggle
+*   [Worked on Kaggle's House Prices dataset](./house_prices)
     +   Accuracy achieved through simple Linear Regression, Gradient Descent: 92.6%
 
