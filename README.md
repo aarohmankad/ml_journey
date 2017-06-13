@@ -16,7 +16,8 @@ with Machine Learning. Here is a table of contents of what I've learned:
 
 | Topic |
 | ----- |
-| [Linear Regression, Gradient Descent](./house_prices) |
+| [Linear Regression](./house_prices) |
+| [Regularized Logistic Regression](./titanic_survival) |
 
 ---
 
@@ -28,5 +29,10 @@ with Machine Learning. Here is a table of contents of what I've learned:
     +   Finished Weeks 1 - 3
 
 *   [Worked on Kaggle's House Prices dataset](./house_prices)
-    +   Accuracy achieved through simple Linear Regression, Gradient Descent: 92.6%
+    +   Accuracy achieved on training data through Linear Regression: 92.6%
+    +   Note for next time: Use [Pandas](http://pandas.pydata.org/) for dataset
+        manipulation
+
+*   [Worked on Kaggle's Titanic Survival dataset](./titanic_survival)
+    +   Accuracy on testing set through Regularized Logistic Regression: 74.2%
 
